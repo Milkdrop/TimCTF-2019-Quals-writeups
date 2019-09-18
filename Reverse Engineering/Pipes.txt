@@ -1,0 +1,1 @@
+We notice the flag is encoded in the binary using an algorithm in the binary. We rewrote that algorithm in our own C++ program and saw the values that corresponded to each ASCII letter. Then we reversed the encoded flag back into ASCII

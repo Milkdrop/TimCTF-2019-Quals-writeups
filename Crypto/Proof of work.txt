@@ -1,0 +1,54 @@
+We wrote a quick python script to bruteforce the input:
+
+import hashlib
+from pwn import *
+import string
+
+chars = string.ascii_lowercase + string.digits
+
+s = ''
+io = remote('89.38.208.143', 21021)
+sol = ''
+found = 0
+
+def bkt(lev, lun):
+    global io
+    global s
+    global chars
+    global target
+    global found
+    global sol
+
+    if(found == 1):
+        return
+
+    if(lev == lun):
+        hass =  hashlib.sha256(s).hexdigest()[-7:]
+
+
+        #print s
+        if(hass == target):
+            found = 1
+            sol = s
+    else:
+        for c in chars:
+            s += c
+            bkt(lev + 1, lun)
+            s = s[:-1]
+
+'''
+while True:
+    found = 0
+    target = '0' * 7
+
+    for lun in range(50):
+        print lun
+        bkt(0, lun)
+
+    print sol
+
+    io.sendline(sol)
+'''
+
+io.sendline('bupcoo')
+io.interactive()

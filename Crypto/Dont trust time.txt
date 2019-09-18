@@ -1,0 +1,1 @@
+We analyzed the binary and saw that the seed was time-dependant. Therefore we wrote a quick decryption program that would bruteforce the AES keys starting at around the time of creation of the flag file, bruteforcing each second before.

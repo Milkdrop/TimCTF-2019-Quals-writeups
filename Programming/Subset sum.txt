@@ -1,0 +1,1 @@
+We used the meet in the middle technique to cut the total number of data that needs to be processed in half. We calculated all the possible sums in both halves, and then iterated through the first half + binary searched the second half to see if there's a combination that gives the desired sum.

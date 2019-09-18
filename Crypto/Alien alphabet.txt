@@ -1,0 +1,1 @@
+We took the image and manually assigned each alien character to an ASCII letter. Then we used a substitution cipher solver like quip quip to get the flag.

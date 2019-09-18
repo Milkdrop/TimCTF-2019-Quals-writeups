@@ -1,0 +1,1 @@
+We opened the image in stegsolve and saw 3 parts of the flag in the filtered QR codes (by RGB channels). After that there's a zip file concatenated at the end of the image that contains the 4th piece.

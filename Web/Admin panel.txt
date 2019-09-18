@@ -1,0 +1,1 @@
+The page has a classic SQLi bug. We put:  ' or '1'='1  in the password field and we get access.
