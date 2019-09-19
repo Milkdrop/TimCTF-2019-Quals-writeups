@@ -1,0 +1,1 @@
+The description hints at the Chinese Remainder Theoreme, but we can't use it to find the t since we need the same number t with different modulos. So to achieve this we use Euler's generalization of Fermat's little theoreme. Did all this in sage interactively. first found t mod p1^4, p2^4 and p3^4 and then used CRT to find t.
