@@ -1,0 +1,1 @@
+After a bit of playing with the server I realized that it encrypted bytes based on the previous bytes sent. Through trial and error I found the first character and then continued to try for the next ones too. Did it all by hand.
