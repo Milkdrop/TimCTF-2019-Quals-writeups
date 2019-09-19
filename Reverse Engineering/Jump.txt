@@ -1,0 +1,1 @@
+After analyzing the file in IDA, between the used functions there was one function that wasn't used, so i looked into it. At first IDA wouldn't disassemble it, but after undefining some instructions it worked. we see a string get strcpy'd into a variable. "VElNQ1RGe2RlQzNwdDF2ZV9FeGNlUDB0aTBuX2g0bmRMZXJ9' this looks a lot like b64 so after decoding it we get the flag.
